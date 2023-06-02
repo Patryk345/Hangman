@@ -98,7 +98,7 @@ function letterch(event) {
 			score2.innerText = "Wygrałeś";
 			score2.style.color = "rgb(29, 139, 29)";
 			score2.style.fontSize = " 35px !important;";
-			score.style.opacity = "1";
+			score.style.disply = "block";
 			alfs.forEach((alf) => {
 				alf.removeEventListener("click", letterch);
 				alf.classList.add("clicked");
@@ -113,7 +113,7 @@ function letterch(event) {
 		hang.innerHTML = "<img src='img/s9.jpg'/>";
 		score2.innerText = "Przegrałeś";
 		score2.style.color = "rgb(200, 29, 29)";
-		score.style.opacity = "1";
+		score.style.display = "block";
 		alfs.forEach((alf) => {
 			alf.removeEventListener("click", letterch);
 			alf.classList.add("clicked");
