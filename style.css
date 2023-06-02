@@ -1,0 +1,191 @@
+* {
+	padding: 0;
+	margin: 0;
+	font-family: "Nunito Sans", sans-serif;
+}
+
+body {
+	background-color: #111;
+	color: #fff;
+	transition: 0.3s;
+}
+
+h1 {
+	text-transform: uppercase;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+}
+
+#haslo {
+	text-align: center;
+	font-size: 25px;
+	letter-spacing: 1.5px;
+}
+
+#container {
+	width: 100vw;
+}
+
+header {
+	width: 100vw;
+
+	text-align: center;
+}
+
+#hang {
+	margin-left: auto;
+	margin-right: auto;
+
+	width: 40vw;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+img {
+	margin-left: auto;
+	margin-right: auto;
+	width: 100%;
+	height: auto;
+}
+
+#main {
+	width: 100vw;
+	margin-top: 100px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-wrap: wrap;
+}
+.alf {
+	float: left;
+	text-transform: uppercase;
+	border: 2px solid #dedede;
+	font-size: 25px;
+	padding: 5px;
+	margin: 8px;
+	border-radius: 10px;
+	width: 2vw;
+	text-align: center;
+}
+
+#alf {
+	width: 30vw;
+}
+
+.alf:hover {
+	cursor: pointer;
+}
+
+#score {
+	position: relative;
+	top: 50%;
+	right: 50%;
+	padding: 30px;
+	border-radius: 15%;
+	background-color: rgba(255, 255, 255, 0.9);
+
+	opacity: 0;
+	transition: 0.5s;
+	text-align: center;
+	animation: anim 1s linear infinite;
+}
+
+#reload:hover {
+	cursor: pointer;
+}
+
+.clicked {
+	color: rgba(rgb(255, 255, 255), rgb(255, 255, 255), rgb(255, 255, 255), 0.2);
+	cursor: default;
+}
+
+.clicked:hover {
+	cursor: default;
+}
+
+.background {
+	position: absolute;
+	top: 5%;
+	left: 1.5%;
+	transition: 0.5s;
+}
+h3 {
+	letter-spacing: 1px;
+	font-size: 25px !important;
+}
+#reload {
+	border: 0;
+	padding: 5px;
+	margin-top: 14px;
+	background-color: rgba(0, 0, 0, 0);
+	font-size: 18px;
+	transition: all 0.2s ease-in-out;
+}
+
+#reload:hover {
+	opacity: 0.6;
+}
+
+@keyframes anim {
+	0% {
+		transform: scale(1);
+	}
+
+	50% {
+		transform: scale(1.05);
+	}
+
+	100% {
+		transform: scale(1);
+	}
+}
+
+.background:hover {
+	cursor: pointer;
+}
+
+#score2 {
+	font-size: 25px !important;
+	font-weight: 700;
+}
+
+#allhas {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+#icon {
+	transition: 0.2s;
+}
+
+#icon:hover {
+	opacity: 0.7;
+	cursor: pointer;
+}
+
+i {
+	font-size: 1.5vw;
+}
+
+@media screen and (max-width: 800px) {
+	#hang {
+		width: 80vw;
+	}
+
+	#alf {
+		width: 80vw;
+		text-align: center;
+	}
+
+	.alf {
+		width: 5vw;
+	}
+
+	#score {
+		top: 15%;
+		right: 15%;
+	}
+}

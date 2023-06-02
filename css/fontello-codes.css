@@ -1,0 +1,5 @@
+
+.icon-eye-off:before { content: '\e800'; } /* '' */
+.icon-eye:before { content: '\e801'; } /* '' */
+.icon-sun-filled:before { content: '\e802'; } /* '' */
+.icon-moon:before { content: '\e803'; } /* '' */
