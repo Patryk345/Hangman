@@ -2,12 +2,14 @@
 	padding: 0;
 	margin: 0;
 	font-family: "Nunito Sans", sans-serif;
+	box-sizing: border-box;
 }
 
 body {
 	background-color: #111;
 	color: #fff;
 	transition: 0.3s;
+	width: 100vw;
 }
 
 h1 {
@@ -25,6 +27,8 @@ h1 {
 
 #container {
 	width: 100vw;
+	z-index: 0;
+	position: absolute;
 }
 
 header {
@@ -57,6 +61,7 @@ img {
 	align-items: center;
 	justify-content: center;
 	flex-wrap: wrap;
+	z-index: 0;
 }
 .alf {
 	float: left;
@@ -66,7 +71,7 @@ img {
 	padding: 5px;
 	margin: 8px;
 	border-radius: 10px;
-	width: 2vw;
+	width: 3vw;
 	text-align: center;
 	transition: 0.3s;
 }
@@ -109,6 +114,7 @@ img {
 	top: 5%;
 	left: 1.5%;
 	transition: 0.5s;
+	z-index: 5;
 }
 h3 {
 	letter-spacing: 1px;
@@ -203,4 +209,55 @@ a {
 
 .alf:hover {
 	opacity: 0.5;
+}
+
+#cat {
+	width: 100%;
+	position: relative;
+	flex-wrap: wrap;
+	flex-direction: row;
+	z-index: 1;
+	top: 0;
+}
+
+.cat {
+	width: 33.3%;
+	height: 33.3vh;
+	position: relative;
+	float: left;
+	text-align: center;
+	background-color: #000;
+	border-right: 2px solid #fff;
+	border-bottom: 2px solid #fff;
+
+	transition: 0.3s;
+}
+
+.cat:hover {
+	cursor: pointer;
+	background-color: #444;
+}
+
+#cat img {
+	width: 20%;
+	height: auto;
+	position: relative;
+	top: 0;
+	margin-top: 4%;
+}
+
+.cattitle {
+	position: relative;
+	bottom: 0;
+	font-size: 20px;
+	text-transform: uppercase;
+	font-weight: 700;
+	margin-top: 10%;
+}
+
+#hastitle {
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+	margin-top: 10px;
 }
