@@ -138,6 +138,7 @@ function back() {
 	if (backgro === false) {
 		document.querySelector("body").style.backgroundColor = "#fff";
 		document.querySelector("body").style.color = "#000";
+		document.querySelector("a").style.color = "#000";
 		backgroundicon.style.transform = "rotate(360deg)";
 
 		backgroundicon.innerHTML = "<i class='icon-moon'></i>";
@@ -145,6 +146,7 @@ function back() {
 	} else {
 		document.querySelector("body").style.backgroundColor = "#111";
 		document.querySelector("body").style.color = "#fff";
+		document.querySelector("a").style.color = "#fff";
 		backgroundicon.style.transform = "rotate(-360deg)";
 		backgroundicon.innerHTML = "<i class='icon-sun-filled'></i>";
 		backgro = false;

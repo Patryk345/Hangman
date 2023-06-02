@@ -68,6 +68,7 @@ img {
 	border-radius: 10px;
 	width: 2vw;
 	text-align: center;
+	transition: 0.3s;
 }
 
 #alf {
@@ -79,14 +80,12 @@ img {
 }
 
 #score {
-	position: relative;
-	top: 50%;
-	right: 50%;
+	position: fixed;
+	display: none;
 	padding: 30px;
 	border-radius: 15%;
 	background-color: rgba(255, 255, 255, 0.9);
 
-	opacity: 0;
 	transition: 0.5s;
 	text-align: center;
 	animation: anim 1s linear infinite;
@@ -170,6 +169,11 @@ i {
 	font-size: 25px;
 }
 
+i:hover {
+	opacity: 0.7;
+	cursor: pointer;
+}
+
 @media screen and (max-width: 800px) {
 	#hang {
 		width: 80vw;
@@ -189,9 +193,14 @@ i {
 		align-items: center;
 		justify-content: center;
 	}
+}
 
-	#score {
-		top: 15%;
-		right: 15%;
-	}
+a {
+	color: #fff;
+	transition: 1s;
+	margin-left: 8px;
+}
+
+.alf:hover {
+	opacity: 0.5;
 }

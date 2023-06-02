@@ -7,16 +7,16 @@
   "ascent": 850,
   "glyphs": [
     {
-      "uid": "7fd683b2c518ceb9e5fa6757f2276faa",
-      "css": "eye-off",
+      "uid": "f9c3205df26e7778abac86183aefdc99",
+      "css": "ccw",
       "code": 59392,
       "src": "fontawesome"
     },
     {
-      "uid": "c5fd349cbd3d23e4ade333789c29c729",
-      "css": "eye",
+      "uid": "0d03db7afd4857accf1821efdc8ea72b",
+      "css": "moon",
       "code": 59393,
-      "src": "fontawesome"
+      "src": "entypo"
     },
     {
       "uid": "5840fe162df3bcc8e390c58ef4e2acf9",
@@ -25,10 +25,16 @@
       "src": "typicons"
     },
     {
-      "uid": "0d03db7afd4857accf1821efdc8ea72b",
-      "css": "moon",
+      "uid": "c5fd349cbd3d23e4ade333789c29c729",
+      "css": "eye",
       "code": 59395,
-      "src": "entypo"
+      "src": "fontawesome"
+    },
+    {
+      "uid": "7fd683b2c518ceb9e5fa6757f2276faa",
+      "css": "eye-off",
+      "code": 59396,
+      "src": "fontawesome"
     }
   ]
 }
