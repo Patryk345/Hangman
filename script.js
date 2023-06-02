@@ -43,7 +43,7 @@ function zmihaslo() {
 			let rand = Math.floor(Math.random() * countries.length);
 			haslo.innerHTML = countries[rand]; // Poprawione przypisanie nowego hasła do elementu HTML
 
-			hasloTekst = haslo.innerText;
+			hasloTekst = haslo.textContent;
 			hasloTekst = hasloTekst.toUpperCase();
 
 			nowehaslo = hasloTekst.replace(/[a-zA-Z]/g, "-");
